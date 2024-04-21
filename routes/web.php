@@ -28,3 +28,7 @@ Route::get('/world', function() {
         'name' => 'World'
     ]);
 });
+
+Route::get('/coment', function() {
+    return view('coment');
+});

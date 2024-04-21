@@ -19,4 +19,11 @@ class HelloTest extends TestCase
         $this->get('/world')
              ->assertSeeText('Hello World');
     }
+
+    public function testComent()
+    {
+        $this->get('/coment', [])
+             ->assertSeeText('Coment')
+             ->assertDontSeeText('Contoh');
+    }
 }
