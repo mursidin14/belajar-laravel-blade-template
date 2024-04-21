@@ -13,4 +13,10 @@ class HelloTest extends TestCase
         $this->get('/hello')
             ->assertSeeText('Hello Mursidin');
     }
+
+    public function testWorldNested()
+    {
+        $this->get('/world')
+             ->assertSeeText('Hello World');
+    }
 }

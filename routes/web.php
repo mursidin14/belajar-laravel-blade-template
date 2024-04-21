@@ -22,3 +22,9 @@ Route::get('/hello', function() {
         'name' => 'Mursidin',
     ]);
 });
+
+Route::get('/world', function() {
+    return view('world.world', [
+        'name' => 'World'
+    ]);
+});
