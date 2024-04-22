@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +32,8 @@ Route::get('/world', function() {
 
 Route::get('/coment', function() {
     return view('coment');
+});
+
+Route::get('/encoding', function(Request $request) {
+    return view('html-encoding', [ 'name' => $request->input('name') ]);
 });
