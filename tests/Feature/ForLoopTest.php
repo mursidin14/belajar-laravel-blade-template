@@ -12,8 +12,8 @@ class ForLoopTest extends TestCase
     {
         $this->view('for', ['limit' => 3]
         )->assertSeeText('angka 1')
-          ->assertSeeText('angka 2')
-          ->assertSeeText('angka 3');
+         ->assertSeeText('angka 2')
+         ->assertSeeText('angka 3');
     }
 
     public function testForeach()
