@@ -1,8 +1,10 @@
-<style>
-    .red {
-        color: red;
-    }
-</style>
+@once
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+@endonce
 
 <h1>{{ $user['name'] }}</h1>
 
