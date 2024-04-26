@@ -14,4 +14,11 @@ class InjectionTest extends TestCase
         'name' => 'mursidin'
     ])->assertSeeText('Hello mursidin');
    }
+
+   public function testExtending()
+   {
+    $this->view('extending', [
+        'name' => 'mursidin'
+    ])->assertSeeText('mursidin');
+   }
 }
